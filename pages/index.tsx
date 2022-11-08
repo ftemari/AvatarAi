@@ -15,7 +15,7 @@ export default function Home() {
           <div className="flex flex-col-reverse sm:flex-row items-start">
             <div className="flex flex-col pr-8">
               <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white">
-                Welcome To avatar AI        
+                Welcome To avatar AI
               </h1>
               <h2 className="text-gray-700 dark:text-gray-200 mb-4">
                 Next experience creating new avatars!
@@ -38,22 +38,22 @@ export default function Home() {
           </div>
           <br></br>
 
-<br></br><br></br>
+          <br></br><br></br>
           <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
             Add our Photos
           </h3>
 
           {/* <!-- Basic HTML Form --> */}
           <div className="flex gap-6 flex-col md:flex-row">
-<form action="/send-data-here" method="post">
-  <label className="text-gray-700 dark:text-gray-200 mb-4" for="first">First name:</label>
-  <input type="text" id="first" name="first" />
-  <label className="text-gray-700 dark:text-gray-200 mb-4" for="last">Last name:</label>
-  <input type="file" id="last" name="last" />
-  <button className="text-gray-700 dark:text-gray-200 mb-4" type="submit">Submit</button>
-</form>
-</div>
-          
+            <form action="/send-data-here" method="post">
+              <label className="text-gray-700 dark:text-gray-200 mb-4" >First name:</label>
+              <input type="text" id="first" name="first" />
+              <label className="text-gray-700 dark:text-gray-200 mb-4" >Last name:</label>
+              <input type="file" id="last" name="last" />
+              <button className="text-gray-700 dark:text-gray-200 mb-4" type="submit">Submit</button>
+            </form>
+          </div>
+
           <br></br>
 
           <br></br><br></br>
