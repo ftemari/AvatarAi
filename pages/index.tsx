@@ -15,15 +15,13 @@ export default function Home() {
           <div className="flex flex-col-reverse sm:flex-row items-start">
             <div className="flex flex-col pr-8">
               <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white">
-                Lee Robinson
+                Welcome To avatar AI        
               </h1>
               <h2 className="text-gray-700 dark:text-gray-200 mb-4">
-                VP of Developer Experience at{' '}
-                <span className="font-semibold">Vercel</span>
+                Next experience creating new avatars!
               </h2>
               <p className="text-gray-600 dark:text-gray-400 mb-16">
-                Helping developers build a faster web. Teaching about web
-                development, serverless, and React / Next.js.
+                Ready to change your activity on the website
               </p>
             </div>
             <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
@@ -38,28 +36,53 @@ export default function Home() {
               />
             </div>
           </div>
+          <br></br>
 
+<br></br><br></br>
           <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
-            Featured Posts
+            Add our Photos
           </h3>
+
+          {/* <!-- Basic HTML Form --> */}
+          <div className="flex gap-6 flex-col md:flex-row">
+<form action="/send-data-here" method="post">
+  <label className="text-gray-700 dark:text-gray-200 mb-4" for="first">First name:</label>
+  <input type="text" id="first" name="first" />
+  <label className="text-gray-700 dark:text-gray-200 mb-4" for="last">Last name:</label>
+  <input type="file" id="last" name="last" />
+  <button className="text-gray-700 dark:text-gray-200 mb-4" type="submit">Submit</button>
+</form>
+</div>
+          
+          <br></br>
+
+          <br></br><br></br>
+          <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-6 text-black dark:text-white">
+            Available
+          </h3>
+
+
           <div className="flex gap-6 flex-col md:flex-row">
             <BlogPostCard
-              title="Everything I Know About Style Guides, Design Systems, and Component Libraries"
+              title="HD Image"
+              price="$60"
               slug="style-guides-component-libraries-design-systems"
               gradient="from-[#D8B4FE] to-[#818CF8]"
             />
             <BlogPostCard
-              title="Rust Is The Future of JavaScript Infrastructure"
+              title="4K image"
+              price="$80"
               slug="rust"
               gradient="from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
             />
             <BlogPostCard
-              title="Past, Present, and Future of React State Management"
+              title="Regular image with 400x400"
+              price="$40"
               slug="react-state-management"
               gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
             />
           </div>
-          <Link
+          {/* <Link
             href="/blog"
             className="flex items-center mt-8 text-gray-600 dark:text-gray-400 leading-7 rounded-lg hover:text-gray-800 dark:hover:text-gray-200 transition-all h-6"
           >
@@ -80,9 +103,9 @@ export default function Home() {
                 />
               </svg>
             </>
-          </Link>
+          </Link> */}
 
-          <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-16 text-black dark:text-white">
+          {/* <h3 className="font-bold text-2xl md:text-4xl tracking-tight mb-4 mt-16 text-black dark:text-white">
             Learn React & Next.js
           </h3>
           <p className="text-gray-600 dark:text-gray-400 mb-4">
@@ -135,7 +158,7 @@ export default function Home() {
                 d="M17.5 12h-15m11.667-4l3.333 4-3.333-4zm3.333 4l-3.333 4 3.333-4z"
               />
             </svg>
-          </a>
+          </a> */}
           <span className="h-16" />
           <Subscribe />
         </div>
