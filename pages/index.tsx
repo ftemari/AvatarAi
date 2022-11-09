@@ -65,7 +65,7 @@ export default function Home() {
           <div className="flex gap-6 flex-col md:flex-row">
             <CheckoutCard
               title="HD Image"
-              price="$60"
+              price="$$60"
               priceId="price_1M21BxDlqkrARzT8tZYtI4T8"
               gradient="from-[#D8B4FE] to-[#818CF8]"
             />
