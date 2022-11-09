@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import Container from '../components/Container';
-import BlogPostCard from '../components/BlogPostCard';
+import CheckoutCard from '../components/BlogPostCard';
 import Subscribe from '../components/Subscribe';
 import VideoCard from '../components/VideoCard';
 
@@ -63,22 +63,22 @@ export default function Home() {
 
 
           <div className="flex gap-6 flex-col md:flex-row">
-            <BlogPostCard
+            <CheckoutCard
               title="HD Image"
               price="$60"
-              slug="style-guides-component-libraries-design-systems"
+              priceId="price_1M21BxDlqkrARzT8tZYtI4T8"
               gradient="from-[#D8B4FE] to-[#818CF8]"
             />
-            <BlogPostCard
+            <CheckoutCard
               title="4K image"
               price="$80"
-              slug="rust"
+              priceId="price_1M21CFDlqkrARzT8OFDyO5mU"
               gradient="from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
             />
-            <BlogPostCard
+            <CheckoutCard
               title="Regular image with 400x400"
               price="$40"
-              slug="react-state-management"
+              priceId="price_1M21CXDlqkrARzT8242uzKHN"
               gradient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
             />
           </div>
@@ -160,7 +160,7 @@ export default function Home() {
             </svg>
           </a> */}
           <span className="h-16" />
-          <Subscribe />
+          {/* <Subscribe /> */}
         </div>
       </Container>
     </Suspense>

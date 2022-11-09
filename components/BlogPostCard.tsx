@@ -1,17 +1,22 @@
 import Link from 'next/link';
-import useSWR from 'swr';
 import cn from 'classnames';
 
 import fetcher from 'lib/fetcher';
 import { Views } from 'lib/types';
+import { checkout } from 'components/functions/checkout.js'
 
-export default function BlogPostCard({ title, price, slug, gradient }) {
-  const { data } = useSWR<Views>(`/api/views/${slug}`, fetcher);
-  const views = data?.total;
+export default function CheckoutCard({ title, price, priceId, gradient }) {
 
   return (
-    <Link
-      href={`/blog/${slug}`}
+    <button
+      onClick={(() => {
+        checkout({
+          lineItems: [{
+            price: priceId,
+            quantity: 1
+          }]
+        })
+      })}
       className={cn(
         'transform hover:scale-[1.01] transition-all',
         'rounded-xl w-full md:w-1/3 bg-gradient-to-r p-1',
@@ -54,6 +59,6 @@ export default function BlogPostCard({ title, price, slug, gradient }) {
           </span> */}
         </div>
       </div>
-    </Link>
+    </button>
   );
 }
